@@ -1,0 +1,138 @@
+{
+  "name": "Mess Management System",
+  "short_name": "Mess Manager",
+  "description": "Complete mess and hostel management system with meal tracking, billing, and inventory management",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Today's Meals",
+      "short_name": "Meals",
+      "description": "View and manage today's meals",
+      "url": "/dashboard?tab=meals",
+      "icons": [
+        {
+          "src": "/icons/shortcut-meals.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "QR Scanner",
+      "short_name": "Scan",
+      "description": "Scan QR code for attendance",
+      "url": "/attendance/scan",
+      "icons": [
+        {
+          "src": "/icons/shortcut-qr.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Quick Payment",
+      "short_name": "Pay",
+      "description": "Make quick payment",
+      "url": "/payments/quick",
+      "icons": [
+        {
+          "src": "/icons/shortcut-payment.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/desktop-dashboard.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Dashboard view on desktop"
+    },
+    {
+      "src": "/screenshots/mobile-dashboard.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Dashboard view on mobile"
+    },
+    {
+      "src": "/screenshots/mobile-meals.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Meal management on mobile"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "focus-existing"]
+  },
+  "protocol_handlers": [
+    {
+      "protocol": "web+messmanager",
+      "url": "/handle-protocol?token=%s"
+    }
+  ]
+}

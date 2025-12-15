@@ -1,0 +1,10 @@
+/.env
+/.env.example
+/account.txt
+/database-schema.md
+/deployment-guide.md
+/implementation-plan.md
+/PHASE_COMPLETION_SUMMARY.md
+/PROGRESS_SUMMARY.md
+/project-timeline.md
+/technical-architecture.md

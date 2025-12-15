@@ -1,0 +1,90 @@
+{
+  "name": "laravel/laravel",
+  "type": "project",
+  "description": "The Laravel Framework with Tyro Authentication and Filament Admin Panel.",
+  "keywords": [
+    "framework",
+    "laravel",
+    "tyro",
+    "filament",
+    "mess-management"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^8.2",
+    "barryvdh/laravel-dompdf": "*",
+    "filament/filament": "*",
+    "intervention/image": "*",
+    "intervention/image-laravel": "*",
+    "laravel/framework": "^12.0",
+    "laravel/sanctum": "^4.0",
+    "laravel/telescope": "*",
+    "laravel/tinker": "^2.9",
+    "maatwebsite/excel": "*",
+    "predis/predis": "^3.3",
+    "pusher/pusher-php-server": "^7.2",
+    "spatie/laravel-activitylog": "*",
+    "spatie/laravel-permission": "^6.0",
+    "tymon/jwt-auth": "^2.0"
+  },
+  "require-dev": {
+    "fakerphp/faker": "^1.23",
+    "laravel/pint": "^1.13",
+    "laravel/sail": "^1.26",
+    "mockery/mockery": "^1.6",
+    "nunomaduro/collision": "^8.0",
+    "phpunit/phpunit": "^11.0",
+    "spatie/laravel-ignition": "^2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Database\\Factories\\": "database/factories/",
+      "Database\\Seeders\\": "database/seeders/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover --ansi"
+    ],
+    "post-update-cmd": [
+      "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+    ],
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php artisan key:generate --ansi",
+      "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
+      "@php artisan migrate --graceful --ansi"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "dont-discover": []
+    }
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true,
+      "php-http/discovery": true
+    },
+    "audit": {
+      "ignore": [
+        "PKSA-jyd3-2srm-pfqd",
+        "PKSA-1ds2-yqqr-64g1"
+      ]
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true
+}

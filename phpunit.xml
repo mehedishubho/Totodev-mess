@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         cacheResultFile=".phpunit.result.cache"
+         executionOrder="depends,defects"
+         forceCoversAnnotation="true"
+         beStrictAboutOutputDuringTests="true"
+         failOnRisky="true"
+         failOnWarning="true"
+         stopOnFailure="false"
+         stderr="true">
+    <testsuites>
+        <!-- Authentication Tests -->
+        <testsuite name="Authentication">
+            <testsuite name="Login Tests">
+                <file>tests/Feature/Auth/LoginTest.php</file>
+            </testsuite>
+            <testsuite name="Registration Tests">
+                <file>tests/Feature/Auth/RegistrationTest.php</file>
+            </testsuite>
+            <testsuite name="Password Reset Tests">
+                <file>tests/Feature/Auth/PasswordResetTest.php</file>
+            </testsuite>
+            <testsuite name="Token Management Tests">
+                <file>tests/Feature/Auth/TokenManagementTest.php</file>
+            </testsuite>
+        </testsuite>
+
+        <!-- User Management Tests -->
+        <testsuite name="User Management">
+            <testsuite name="Profile Management">
+                <file>tests/Feature/User/ProfileManagementTest.php</file>
+            </testsuite>
+            <testsuite name="User Settings">
+                <file>tests/Feature/User/UserSettingsTest.php</file>
+            </testsuite>
+        </testsuite>
+
+        <!-- Mess Management Tests -->
+        <testsuite name="Mess Management">
+            <testsuite name="Mess Creation">
+                <file>tests/Feature/Mess/MessCreationTest.php</file>
+            </testsuite>
+            <testsuite name="Mess Configuration">
+                <file>tests/Feature/Mess/MessConfigurationTest.php</file>
+            </testsuite>
+            <testsuite name="Member Management">
+                <file>tests/Feature/Mess/MemberManagementTest.php</file>
+            </testsuite>
+        </testsuite>
+
+        <!-- Meal Management Tests -->
+        <testsuite name="Meal Management">
+            <testsuite name="Meal Entry">
+                <file>tests/Feature/Meal/MealEntryTest.php</file>
+            </testsuite>
+            <testsuite name="Meal Locking">
+                <file>tests/Feature/Meal/MealLockingTest.php</file>
+            </testsuite>
+            <testsuite name="Meal Reports">
+                <file>tests/Feature/Meal/MealReportsTest.php</file>
+            </testsuite>
+        </testsuite>
+
+        <!-- Bazar Management Tests -->
+        <testsuite name="Bazar Management">
+            <testsuite name="Bazar Entry">
+                <file>tests/Feature/Bazar/BazarEntryTest.php</file>
+            </testsuite>
+            <testsuite name="Bazar Reports">
+                <file>tests/Feature/Bazar/BazarReportsTest.php</file>
+            </testsuite>
+            <testsuite name="Bazar Rotation">
+                <file>tests/Feature/Bazar/BazarRotationTest.php</file>
+            </testsuite>
+        </testsuite>
+
+        <!-- Payment Management Tests -->
+        <testsuite name="Payment Management">
+            <testsuite name="Payment Entry">
+                <file>tests/Feature/Payment/PaymentEntryTest.php</file>
+            </testsuite>
+            <testsuite name="Payment Reports">
+                <file>tests/Feature/Payment/PaymentReportsTest.php</file>
+            </testsuite>
+            <testsuite name="Payment Methods">
+                <file>tests/Feature/Payment/PaymentMethodsTest.php</file>
+            </testsuite>
+        </testsuite>
+
+        <!-- Billing System Tests -->
+        <testsuite name="Billing System">
+            <testsuite name="Bill Generation">
+                <file>tests/Feature/Billing/BillGenerationTest.php</file>
+            </testsuite>
+            <testsuite name="Bill Calculations">
+                <file>tests/Feature/Billing/BillCalculationsTest.php</file>
+            </testsuite>
+            <testsuite name="Invoice Generation">
+                <file>tests/Feature/Billing/InvoiceGenerationTest.php</file>
+            </testsuite>
+        </testsuite>
+
+        <!-- Inventory Management Tests -->
+        <testsuite name="Inventory Management">
+            <testsuite name="Stock Management">
+                <file>tests/Feature/Inventory/StockManagementTest.php</file>
+            </testsuite>
+            <testsuite name="Inventory Transactions">
+                <file>tests/Feature/Inventory/InventoryTransactionsTest.php</file>
+            </testsuite>
+            <testsuite name="Low Stock Alerts">
+                <file>tests/Feature/Inventory/LowStockAlertsTest.php</file>
+            </testsuite>
+        </testsuite>
+
+        <!-- Attendance & QR Code Tests -->
+        <testsuite name="Attendance & QR Code">
+            <testsuite name="QR Code Generation">
+                <file>tests/Feature/Attendance/QRCodeGenerationTest.php</file>
+            </testsuite>
+            <testsuite name="QR Code Scanning">
+                <file>tests/Feature/Attendance/QRCodeScanningTest.php</file>
+            </testsuite>
+            <testsuite name="Attendance Approval">
+                <file>tests/Feature/Attendance/AttendanceApprovalTest.php</file>
+            </testsuite>
+        </testsuite>
+
+        <!-- Announcement System Tests -->
+        <testsuite name="Announcement System">
+            <testsuite name="Announcement Creation">
+                <file>tests/Feature/Announcement/AnnouncementCreationTest.php</file>
+            </testsuite>
+            <testsuite name="Announcement Delivery">
+                <file>tests/Feature/Announcement/AnnouncementDeliveryTest.php</file>
+            </testsuite>
+            <testsuite name="Notification Management">
+                <file>tests/Feature/Announcement/NotificationManagementTest.php</file>
+            </testsuite>
+        </testsuite>
+
+        <!-- API Tests -->
+        <testsuite name="API Tests">
+            <testsuite name="API Authentication">
+                <file>tests/Feature/Api/ApiAuthenticationTest.php</file>
+            </testsuite>
+            <testsuite name="API Endpoints">
+                <file>tests/Feature/Api/ApiEndpointsTest.php</file>
+            </testsuite>
+            <testsuite name="API Validation">
+                <file>tests/Feature/Api/ApiValidationTest.php</file>
+            </testsuite>
+            <testsuite name="API Error Handling">
+                <file>tests/Feature/Api/ApiErrorHandlingTest.php</file>
+            </testsuite>
+        </testsuite>
+
+        <!-- PWA Tests -->
+        <testsuite name="PWA Tests">
+            <testsuite name="Service Worker">
+                <file>tests/Feature/PWA/ServiceWorkerTest.php</file>
+            </testsuite>
+            <testsuite name="Offline Functionality">
+                <file>tests/Feature/PWA/OfflineFunctionalityTest.php</file>
+            </testsuite>
+            <testsuite name="Mobile Optimization">
+                <file>tests/Feature/PWA/MobileOptimizationTest.php</file>
+            </testsuite>
+            <testsuite name="App Installation">
+                <file>tests/Feature/PWA/AppInstallationTest.php</file>
+            </testsuite>
+        </testsuite>
+
+        <!-- Integration Tests -->
+        <testsuite name="Integration Tests">
+            <testsuite name="End-to-End Workflows">
+                <file>tests/Feature/Integration/EndToEndWorkflowsTest.php</file>
+            </testsuite>
+            <testsuite name="Data Consistency">
+                <file>tests/Feature/Integration/DataConsistencyTest.php</file>
+            </testsuite>
+            <testsuite name="Performance Testing">
+                <file>tests/Feature/Integration/PerformanceTest.php</file>
+            </testsuite>
+        </testsuite>
+
+        <!-- Security Tests -->
+        <testsuite name="Security Tests">
+            <testsuite name="Authentication Security">
+                <file>tests/Feature/Security/AuthenticationSecurityTest.php</file>
+            </testsuite>
+            <testsuite name="Authorization Tests">
+                <file>tests/Feature/Security/AuthorizationTest.php</file>
+            </testsuite>
+            <testsuite name="Data Validation">
+                <file>tests/Feature/Security/DataValidationTest.php</file>
+            </testsuite>
+            <testsuite name="SQL Injection Protection">
+                <file>tests/Feature/Security/SqlInjectionProtectionTest.php</file>
+            </testsuite>
+            <testsuite name="XSS Protection">
+                <file>tests/Feature/Security/XssProtectionTest.php</file>
+            </testsuite>
+            <testsuite name="CSRF Protection">
+                <file>tests/Feature/Security/CsrfProtectionTest.php</file>
+            </testsuite>
+        </testsuite>
+
+        <!-- Performance Tests -->
+        <testsuite name="Performance Tests">
+            <testsuite name="Load Testing">
+                <file>tests/Feature/Performance/LoadTest.php</file>
+            </testsuite>
+            <testsuite name="Database Performance">
+                <file>tests/Feature/Performance/DatabasePerformanceTest.php</file>
+            </testsuite>
+            <testsuite name="Memory Usage">
+                <file>tests/Feature/Performance/MemoryUsageTest.php</file>
+            </testsuite>
+        </testsuite>
+    </testsuites>
+
+    <!-- Coverage Configuration -->
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./app</directory>
+            <directory suffix=".php">./config</directory>
+            <directory suffix=".php">./database</directory>
+            <directory suffix=".php">./routes</directory>
+            <directory suffix=".php">./src</directory>
+            <file>./public/index.php</file>
+        </whitelist>
+        <whitelist>
+            <directory suffix=".php">./tests</directory>
+            <directory suffix=".php">./vendor</directory>
+        </whitelist>
+    </filter>
+
+    <!-- Logging Configuration -->
+    <logging>
+        <type>coverage-html</type>
+        <target>coverage</target>
+        <lowUpperBound>35</lowUpperBound>
+        <highLowerBound>70</highLowerBound>
+    </logging>
+</phpunit>
