@@ -54,14 +54,8 @@
     50 => 'Spatie\\Permission\\PermissionServiceProvider',
     51 => 'Tymon\\JWTAuth\\Providers\\LaravelServiceProvider',
     52 => 'Laravel\\Sanctum\\SanctumServiceProvider',
-    53 => 'Laravel\\Telescope\\TelescopeServiceProvider',
-    54 => 'Filament\\FilamentServiceProvider',
-    55 => 'Spatie\\Activitylog\\ActivitylogServiceProvider',
-    56 => 'Spatie\\Permission\\PermissionServiceProvider',
-    57 => 'Intervention\\Image\\Laravel\\ServiceProvider',
-    58 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
-    59 => 'Barryvdh\\DomPDF\\ServiceProvider',
-    60 => 'App\\Providers\\AppServiceProvider',
+    53 => 'Spatie\\Permission\\PermissionServiceProvider',
+    54 => 'App\\Providers\\AppServiceProvider',
   ),
   'eager' => 
   array (
@@ -103,14 +97,8 @@
     35 => 'Spatie\\Permission\\PermissionServiceProvider',
     36 => 'Tymon\\JWTAuth\\Providers\\LaravelServiceProvider',
     37 => 'Laravel\\Sanctum\\SanctumServiceProvider',
-    38 => 'Laravel\\Telescope\\TelescopeServiceProvider',
-    39 => 'Filament\\FilamentServiceProvider',
-    40 => 'Spatie\\Activitylog\\ActivitylogServiceProvider',
-    41 => 'Spatie\\Permission\\PermissionServiceProvider',
-    42 => 'Intervention\\Image\\Laravel\\ServiceProvider',
-    43 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
-    44 => 'Barryvdh\\DomPDF\\ServiceProvider',
-    45 => 'App\\Providers\\AppServiceProvider',
+    38 => 'Spatie\\Permission\\PermissionServiceProvider',
+    39 => 'App\\Providers\\AppServiceProvider',
   ),
   'deferred' => 
   array (
